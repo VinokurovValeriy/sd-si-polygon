@@ -9,6 +9,6 @@ public class EquilateralTriangle extends Triangle {
         double b = sidesOfTheTriangle.get(1);
         double c = sidesOfTheTriangle.get(2);
 
-        return (a == b && b == c);
+        return a == b && b == c;
     }
 }

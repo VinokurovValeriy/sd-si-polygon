@@ -22,7 +22,6 @@ public class InputSidesOfTheTriangleProvider {
         }
     }
 
-
     public List<Double> getSidesOfTheTriangle() {
         return sidesOfTheTriangle;
     }

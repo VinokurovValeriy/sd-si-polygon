@@ -32,18 +32,3 @@ public class Main {
 }
 
 
-/*
-    private static void checkRules(List<Rule> ruleList, InputStringProvider string) {
-        for (Rule rule : ruleList) {
-            if (rule.checkString(string)) {
-                Rule.countRules++;
-                System.out.println(rule.getClass().getSimpleName() + " is true");
-            }
-        }
-        if (Rule.countRules == 0) {//If there's no confirmed rules
-            System.out.println("This line does not fit under any rule!");
-        }
-    }
-}*/
-
-

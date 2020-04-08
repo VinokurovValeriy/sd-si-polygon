@@ -9,8 +9,12 @@ public class RightTriangle extends Triangle {
         double b = sidesOfTheTriangle.get(1);
         double c = sidesOfTheTriangle.get(2);
 
-        return Math.pow(c, 2) == Math.pow(a, 2) + Math.pow(b, 2) ||
-                Math.pow(b, 2) == Math.pow(a, 2) + Math.pow(c, 2) ||
-                Math.pow(a, 2) == Math.pow(b, 2) + Math.pow(c, 2);
+        return checkRightTriangle(a, b, c) ||
+                checkRightTriangle(b, c, a) ||
+                checkRightTriangle(c, a, b);
+    }
+
+    private boolean checkRightTriangle(double a, double b, double c) {
+        return Math.pow(a, 2) == Math.pow(b, 2) + Math.pow(c, 2);
     }
 }

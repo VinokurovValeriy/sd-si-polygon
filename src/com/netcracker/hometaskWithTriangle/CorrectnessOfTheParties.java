@@ -8,6 +8,6 @@ public class CorrectnessOfTheParties {
         double b = sidesOfTheTriangle.get(1);
         double c = sidesOfTheTriangle.get(2);
 
-        return (c < a + b && b < a + c && a < b + c);
+        return c < a + b && b < a + c && a < b + c;
     }
 }
