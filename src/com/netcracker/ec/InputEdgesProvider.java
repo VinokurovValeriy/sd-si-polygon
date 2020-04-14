@@ -11,14 +11,14 @@ public class InputEdgesProvider {
 
     public InputEdgesProvider() {
         edges = new ArrayList<>();
-        InputEdges();
+        inputEdges();
     }
 
     public List<Double> getEdges() {
         return edges;
     }
 
-    private void InputEdges() {
+    private void inputEdges() {
         Scanner scanner = new Scanner(System.in);
         for (int i = 1; i <= 3; i++) {
             System.out.println("Enter side №" + i);
@@ -27,7 +27,7 @@ public class InputEdgesProvider {
         if (!Triangle.isTriangle(edges)) {
             System.out.println("It's not a triangle,enter sides one more time.");
             edges.clear();
-            InputEdges();
+            inputEdges();
         }
         scanner.close();
     }
